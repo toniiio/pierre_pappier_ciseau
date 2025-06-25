@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom,rgb(0, 31, 131),rgb(192,0,189));
+}
+.main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border: 3px solid rgb(201,201,201);
+    border-radius: 2rem;
+    padding: 3rem 3rem;
+}
+h1{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+    color: rgb(109, 153, 255);
+    text-transform: uppercase;
+}
+#choose{
+    display: flex;
+    gap:1rem;
+}
+#choose button{
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 4rem;
+    border:3px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#choose button:hover{
+    background-color: white;
+    border: 3px solid rgb(109,153,255);
+    transform: scale(1.15);
+}
+#player,#computer{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#result{
+    font-size: 3rem;
+    border:3px solid rgb(109,153,255);
+    border-radius: 0.5rem;
+    padding:10px 50px;
+}
+#reset{
+    font-size: 2rem;
+    border: 3px solid rgb(192,0,189);
+    border-radius: 0.5rem;
+    padding: 10px 50px;
+    background-color:rgb(192,0,189);
+    color: white;
+    margin-top: 1rem;
+    cursor:pointer;
+}
+.animate {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
